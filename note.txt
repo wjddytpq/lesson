@@ -1,0 +1,12 @@
+코드를 적고나서 git add 로 파일을 선택한다.  git add app.txt 혹은 여러개를 원할땐 git add app.txt app2.txt 이런식으로하고
+모든 파일을 저장하고 싶을땐 git add . 을 하면 된다. 이걸 staging 이라고 한다
+
+git add로 파일을 선택했다면 commit으로 실 저장을 할 수 있다. git commit -m '메시지' 이렇게 메시지 자리에
+무언갈 입력해서 파일을 저장할 때 필요한 메시지를 저장하며 저장할 수 있다
+
+git status 를 하면 지금 어떤 파일들을 선택, staging 했는지 보여주는 상태창을 보여준다.
+
+git log --all --online 이럼 내가 commit 한 내역들을 다 볼 수 있다.
+
+git diff 를 입력하면 최근 commit과 현재파일의 차이점을 보여준다. 
+j/k 로 스크롤바 조작을 할 수 있고. q키로 종료할 수 있다.
