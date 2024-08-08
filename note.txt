@@ -15,3 +15,4 @@ j/k 로 스크롤바 조작을 할 수 있고. q키로 종료할 수 있다.
 
 git branch (작명) 을 하면 현재 가장 최근 commit의 사본을 하나 생성해준다.
 git switch (작명) 을 하면 사본으로 이동한다. 그 상태에서 상태창을 띄워보면 (git status) (작명)의 branch라고 뜬다
+git branch -d (작명) 을 하면 브랜치가 삭제된다.
