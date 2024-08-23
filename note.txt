@@ -22,3 +22,12 @@ git merge (branch명) 을 하면 된다. 근데 만약 서로 같은 파일을 �
 만약 그럴 시에 중복된 부분에서 맘에 드는 부분만 남기고 저장하거나, 위에 선택을 통해서 정할 수 있다.
 
 merge를 한 후에 기존 브랜치는 삭제해두자.
+
+git restore (파일명) 을 하면 그 파일의 가장 최근 commit상태로 되돌아간다.
+만약 a,b,c 파일을 생성할때마다 commit을 한 상태에서 git restore --sourse (commit 아이디) 를 한다면 b의 commit상태. 
+즉 a 와 b만 존재하던 예전에 상태로 갈 수 있다.
+
+git restore --staged (파일명) 을 하면 staging했던 특정 파일을 취소할 수 있다.
+git revert (commit 아이디) 를 하면 중간에 있던 commit을 삭제시켜줄 수 있다. 그럼 해당 커밋에서 일어난 작업을 취소시킴.
+실제로 실행시키면 에디터가 나오고 첫 줄에 commit message가 있는데 메시지를 적고 창을 닫으면 완료. git log --oneline을 해보면
+a b c 그리고 새로운 commit으로써 b commit을 제외시킨 commit을 생성한다.
