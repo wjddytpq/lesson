@@ -31,3 +31,11 @@ git restore --staged (파일명) 을 하면 staging했던 특정 파일을 취�
 git revert (commit 아이디) 를 하면 중간에 있던 commit을 삭제시켜줄 수 있다. 그럼 해당 커밋에서 일어난 작업을 취소시킴.
 실제로 실행시키면 에디터가 나오고 첫 줄에 commit message가 있는데 메시지를 적고 창을 닫으면 완료. git log --oneline을 해보면
 a b c 그리고 새로운 commit으로써 b commit을 제외시킨 commit을 생성한다.
+
+
+github 사용할때 기본 브랜치 이름을 main으로 해야한다. git branch -M main
+git push -u (github주소.git) main 을 하면 된다. -u를 하면 지금 이 주소를 기억하고 나중에 push만 해줘도 되고
+main을 하면 내 main브랜치의 마지막 commit을 github에 저장한다.
+
+github주소가 너무 길면 변수화 시킬 수 있다. 
+git remote add (변수명) (주소) 이렇게 하면 된다.
